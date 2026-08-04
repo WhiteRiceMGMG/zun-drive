@@ -1,0 +1,50 @@
+mianLoop()
+- 16msc update()
+- boot時 initialize()
+	- manager no initialize()
+
+
+mainLoop() -> update()
+- input -> update()
+- moveing -> update()
+- zun no byouga -> update()
+
+input() -> update()
+- pad input toritudukeru
+	- pad manager
+		- nyuryoku no hoji
+			- mae_ 0 ~ 100
+			- getMae() mae_ wo kaesu
+
+moving() -> update()
+- pad input ni taisite culc
+	- move manager
+		- culcMae()
+		- padManger.getMae() wo tukatte keisan
+		- moveManger de hoji
+
+zun no byouga -> update()
+- culc ni taishite byouga()
+	- byougaManager
+		- moveManager
+
+zundaManager
+	- zunda no info wo hoji
+		- zundaMae_
+			- getZundaMae() {return zundaMae_}
+			- setZundaMae(float tmp) {zundaMae_ = tmp;}
+		- zundaUshiro_
+		- zundarignt_
+		- zundaleft_
+
+- contrllerCulcMae()
+	- hoge_ member
+	- initialize()
+	- update()
+	- culc()
+	{auto temp = zundaManager().getZundaMae() +  padManager.getMae() 
+	 zundaManger().setZundaMae(temp)
+	}
+
+
+ 

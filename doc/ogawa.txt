@@ -1,0 +1,9 @@
+- Manager no skausei
+	- moveManager
+	- zundaManager
+	- 
+
+- controller 
+	- culu
+
+

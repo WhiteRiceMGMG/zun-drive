@@ -1,0 +1,5 @@
+- mainLoop()
+	- initialize()
+	- 16ms update()
+- padManger
+- byougaManager()
