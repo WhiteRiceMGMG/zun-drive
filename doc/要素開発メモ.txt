@@ -1,0 +1,79 @@
+APL層について (26.08.06(木)(曇り))
+
+▼▼▼APL層現状の構成▼▼▼
+■ZUN車保護機能
+pprtctif.h
+vdgPprtctifInit()      保護調停管理初期化処理関数
+vdgPprtctif16msm()      保護調停管理定期処理関数
+u8gPprtctifOvrvsts     オーバーレブ調停管理結果 OFF,ON[-] 
+u8gPprtctifClthszsts   クラッチ焼き付き調停管理結果 OFF,ON[-]
+u8gPprtctifBrkszsts    ブレーキ焼き付き調停管理結果 OFF,ON[-]
+u8gPprtctifEnststs     エンジンストール調停管理結果 OFF,ON[-] 
+
+■ZUN車警告表示
+pwarnif.h
+vdgPwarnifInit()       警告通知初期化処理関数
+vdgPwarnif64msm()      警告通知定期処理関数
+u8gPwarnifOvrhet       オーバーヒート状態警告 OFF,ON[-]
+u8gPwarnifSnserr       センサー状態警告 OFF,ON[-]
+
+■ZUN車(思いつかない)
+ppermif.h
+vdgPpermifInit()       許可調停管理初期化処理関数
+vdgPpermif16msm()       許可調停管理定期処理関数
+u8gPpermifSim          仮想simlator演算許可調停結果 OFF,ON[-]
+u8gPpermifSht          仮想シフト遷移調停結果 OFF,ON[-]
+
+■ZUN車→シミュレータブリッジ
+pvehstsjdgif.h
+vdgPvehstsjdgifInit()  仮想マシン状態調停初期化処理関数OFF,ON[-]
+vdgPvehstsjdgif64msm() 仮想マシン状態調停定期処理関数OFF,ON[-]
+u8gPvehstsjdgifStop    仮想マシン停止状態調停結果OFF,ON[-]
+u8gPvehstsjdgifRun     仮想マシン走行状態調停結果OFF,ON[-]
+u8gPvehstsjdgifSpdup   仮想マシン加速状態調停結果OFF,ON[-]
+u8gPvehstsjdgifSpddw   仮想マシン減速状態調停結果OFF,ON[-]
+u8gPvehstsjdgifEnst    仮想マシンエンスト状態調停結果OFF,ON[-]
+▲▲▲APL層現状の構成▲▲▲
+
+------------------------------------------------------------------------
+
+----------------------------------------------------------------
+●■ZUN車(思いつかない)                                         |
+ppermif.h                                                       |
+vdgPpermifInit()       許可調停管理初期化処理関数               |
+vdgPpermif16msm()       許可調停管理定期処理関数                |
+u8gPpermifSim          仮想simlator演算許可調停結果 OFF,ON[-]   |
+u8gPpermifSht          仮想シフト遷移調停結果 OFF,ON[-]         |
+----------------------------------------------------------------
+↑こいつ役割が雑？
+▼▼▼現状こいつでやりたいこと▼▼▼
+・IG-ON時にシミュレータ演算許可フラグを立てる
+・IG-ON時に出力表示許可フラグを立てる
+・アクセル，クラッチ，スピードからギア遷移許可フラグ立てる
+・IG-OFF時はシミュレーションをせずに，出力変数を0にしておく．
+・リバースギア条件として車速>0の時は遷移OFF,車速>5のときは遷移NG
+・クラッチ焼き付き時 入力クラッチを．．．
+・ブレーキ焼き付き時 加速スロットル開度増加許可フラぐOFF 
+                     高車速許可フラグOFF
+・オーバーレブ時  シフトダウン許可フラグOFF アクセル上限設定？
+・エンジンストール時 駆動許可フラグ シミュレーター許可OFF 
+▲▲▲現状こいつでやりたいこと▲▲▲
+
+↓↓↓ 整理 ↓↓↓
+
+extern u8 u8gPpermifSim;       仮想simulator演算許可
+extern u8 u8gPpermifDisp;      仮想出力表示許可
+extern u8 u8gPpermifSht;       仮想シフト遷移許可
+extern u8 u8gPpermifRev;       リバースギア投入許可
+extern u8 u8gPpermifShtDw;     シフトダウン許可
+extern u8 u8gPpermifClthCon;   クラッチ接続許可
+extern u8 u8gPpermifAccel;     加速/スロットル許可
+extern u8 u8gPpermifDrive;     駆動出力許可
+
+
+
+
+
+
+
+
