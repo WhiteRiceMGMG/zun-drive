@@ -55,13 +55,27 @@ void
 vdgPsysctl16ms( void )
 {
     int8_t s8tGearpos;
-    s8tGearpos = s8gSgearcrtifPos
+    uint8_t u8tGearrev;
+    uint8_t u8tAcelpct;
+
+    u8tAcelpct = 
+    s8tGearpos = s8gSgearcrtifPos;
+    u8tGearrev = 
+
     if ( u8gPpermifSht == (uint8_t)ON )
     {
         s8sGearposO = s8tGearpos;
         s8gPsysctlGearpos = s8tGearpos;
     }
+
+    if ( u8gPpermifShtrev == (uint8_t)ON )
+    {
+        
+        
     
+    if ( u8gPpermifAcelLim == (uint8_t)ON )
+    {
+        
     
     
 
