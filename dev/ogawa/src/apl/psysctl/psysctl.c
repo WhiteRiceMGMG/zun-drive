@@ -54,8 +54,17 @@ vdgPsysctlInit( void )
 void
 vdgPsysctl16ms( void )
 {
-    s8gPsysctlGearpos = (uint8_t)s8g_PSYSCTL_INITGEAR;
-    s8gPsysctlAcelpct = (uint8_t)0;
+    int8_t s8tGearpos;
+    s8tGearpos = s8gSgearcrtifPos
+    if ( u8gPpermifSht == (uint8_t)ON )
+    {
+        s8sGearposO = s8tGearpos;
+        s8gPsysctlGearpos = s8tGearpos;
+    }
+    
+    
+    
+
 }
 
 /******************************************************************************
