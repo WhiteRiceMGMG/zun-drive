@@ -58,7 +58,7 @@ vdgPsysctl16ms( void )
     uint8_t u8tGearrev;
     uint8_t u8tAcelpct;
 
-    u8tAcelpct = 
+    u8tAcelpct = u8gSacelcrtifThlpct;
     s8tGearpos = s8gSgearcrtifPos;
     u8tGearrev = 
 
@@ -75,7 +75,9 @@ vdgPsysctl16ms( void )
     
     if ( u8gPpermifAcelLim == (uint8_t)ON )
     {
-        
+        u8tAcelpct = u8gPpermifAcelMax;
+    }
+    
     
     
 
