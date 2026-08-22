@@ -25,6 +25,15 @@
 int8_t   s8gSgearcrtifPos;
 uint8_t  u8gSgearcrtifCrtflg;
 
+#define s8g_SGEARIF_REVERSE ((int8_t)-1)   /* gear: REVERSE */
+#define s8g_SGEARIF_NEUTRAL ((int8_t)0)    /* gear: NEUTRAL */
+#define s8g_SGEARIF_FIRST   ((int8_t)1)    /* gear: FIRST   */
+#define s8g_SGEARIF_SECOND  ((int8_t)2)    /* gear: SECOND  */
+#define s8g_SGEARIF_THIRD   ((int8_t)3)    /* gear: THIRD   */
+#define s8g_SGEARIF_FOURTH  ((int8_t)4)    /* gear: FOURTH  */
+#define s8g_SGEARIF_FIFTH   ((int8_t)5)    /* gear:FIFTH    */
+
+
 /******************************************************************************
   * internal public variables contains macros                                  
 ******************************************************************************/
