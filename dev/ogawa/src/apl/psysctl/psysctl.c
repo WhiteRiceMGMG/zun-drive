@@ -10,9 +10,16 @@
 /*  * include                                                   */
 /****************************************************************/
 #include "../../inc/common.h"
-#include "../ppermif.h"
+#include "../ppermif.h" /* u8gPpermifSht */
+                         /* u8gPpermifShtre */
+                         /* u8gPpermifAcelLim */
+                         /* u8gPpermifAcelMax */
+                         /* u8gPpermifSpdLim */
 #include "../psysctlif.h"
-
+#include "../../sac/sigswcrtif.h" /* u8gSigswcrtifSts */
+#include "../../sac/sgearcrtif.h" /* s8gSgearcrtifPos */
+                                  /* s8g_SGEARIF_REVERSE */
+#include "../../sac/sbrkcrtif.h" /* u8gSbrkcrtifPdlpct */
 
 /****************************************************************/
 /*  * external public variables contains macros                 */
@@ -76,6 +83,46 @@ vdgPsysctl16ms( void )
         u8tAcelpct = u8gPpermifAcelMax;
     }
     
+    
+    
+    if ( u8gSigswcrtifSts == (uint8_t)ON )
+    {
+        if ( s8gSgearcrtifPos == s8g_SGEARIF_REVERSE )
+        {
+            if ( u8gPpermifShtre == (uint8_t)ON )
+            {
+                s8tGearpos = s8gSgearcrtifPos;
+            }
+        }
+        else
+        {
+            if ( u8gPpermifShtre == (uint8_t)ON )
+            {
+                s8tGearpos = s8gSgearcrtifPos;
+            }
+        }
+        
+        if ( u8gPpermifAcelLim == (uint8_t)ON )
+        {
+            u8tAcelpct = u8gPpermifAcelMax;
+        }
+        
+        if ( u8gPpermifSpdLim == (uint8_t)ON )
+        {
+            if ( スピード > u8gPpermifSpdMax )
+            {
+                u8tSpdval = u8gPpermifSpdMax;
+                ブレーキ = u8gSbrkcrtifPdlpct + 50%
+                if ( ブレーキ > 100% )
+                {
+                    ブレーキ = 100%;
+                }
+            }
+        }
+    }
+    else
+    {
+        
     
     
 
