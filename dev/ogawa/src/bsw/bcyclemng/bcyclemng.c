@@ -38,6 +38,8 @@
 #include "../../../debug/log/print_log.h"
 #endif
 
+#include "../../../debug/kensa_1/kensa_seq.h" /* vdgKensaSeq64msin() - 実入力デバイスが無いための擬似入力 */
+
 #include "../bcyclemngif.h"         /* self header */
 
 /******************************************************************************
@@ -161,6 +163,7 @@ vdgBcyclemngif64msin( void )
 #if ( PRINT_LOGSETTING_CONF == PRINT_LOGSETTING_VALID )
     vdgLogPrint( "---EXECUTE vdgBcyclemngif64msin()---" );
 #endif
+    vdgKensaSeq64msin();    /* 擬似入力シーケンス(実入力デバイスが無いため) */
     vdgSacaramngif64msin(); /* sac layer manager 64msin function */
     vdgAplaramngif64msin(); /* apl layer manager 64msin function */
     vdgSimaramngif64msin(); /* sim layer manager 64msin function */

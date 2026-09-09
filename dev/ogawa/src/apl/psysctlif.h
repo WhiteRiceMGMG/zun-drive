@@ -11,16 +11,22 @@
 /****************************************************************/
 /*  * include                                                   */
 /****************************************************************/
+#include "../inc/common.h" /* uint8_t等の型定義。他ファイルからのinclude順序に依存しないための自己完結化 */
 
 /****************************************************************/
 /*  * external public variables contains macros                 */
 /****************************************************************/
+extern int8_t  s8gPsysctlGearpos; /* 許可調停済ギア(SIMへ渡す) */
+extern uint8_t u8gPsysctlAcelpct; /* 許可調停済アクセル開度(SIMへ渡す) */
+extern uint8_t u8gPsysctlBrkpct;  /* 許可調停済ブレーキ開度(SIMへ渡す) */
+extern uint8_t u8gPsysctlClthpct; /* 許可調停済クラッチ開度(SIMへ渡す) */
+extern uint8_t u8gPsysctlIgswsts; /* 許可調停済イグニッション状態(SIMへ渡す。強制IG-OFF反映済) */
 
 /****************************************************************/
 /*  * external function prototyp                                */
 /****************************************************************/
-void vdgPsysctlInit( void )
-void vdgPsysctl16ms( void );
+void vdgPsysctlInit( void );
+void vdgPsysctl16msin( void );
 
 #endif
 /****************************************************************/

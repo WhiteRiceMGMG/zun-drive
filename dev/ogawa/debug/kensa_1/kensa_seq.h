@@ -1,12 +1,12 @@
 /******************************************************************************
-  * @file     mclthif.h
-  * @brief    clutch coupling model
-  * @domain   sim
+  * @file     kensa_seq.h
+  * @brief    scripted test-input sequence (no real input device exists yet)
+  * @domain   debug
   * @date     2026/09/09
   * @(c)      2026 ocml
 ******************************************************************************/
-#ifndef MCLTHIF_H
-#define MCLTHIF_H
+#ifndef KENSA_SEQ_H
+#define KENSA_SEQ_H
 
 /******************************************************************************
   * include
@@ -15,13 +15,12 @@
 /******************************************************************************
   * external public variables contains macros
 ******************************************************************************/
-extern uint8_t u8gMclthifCplpct;  /* engine-to-wheel coupling  0=disengaged,100=engaged[%] */
 
 /******************************************************************************
   * external function prototype
 ******************************************************************************/
-void vdgMclthifInit( void );
-void vdgMclthif4msin( void );
+void vdgKensaSeqInit( void );
+void vdgKensaSeq64msin( void );
 
 #endif
 /******************************************************************************
