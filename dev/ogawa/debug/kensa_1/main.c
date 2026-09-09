@@ -11,6 +11,7 @@
 ******************************************************************************/
 #include "./main.h"
 #include "./kensa_seq.h"
+#include "./kensa_manual.h"
 
 /******************************************************************************
   * external public variables contains macros
@@ -43,7 +44,7 @@ main( void )
     vdgLogArgPrint( "u8gBscheduleifRstflg = %d", (uint32_t)u8gBscheduleifRstflg );
 #endif
 
-    vdgKensaSeqInit();
+    vdgKensaManualInit();
     vdgVirtualenvInit();
     vdgVirtualenvExecute();
     return 0;

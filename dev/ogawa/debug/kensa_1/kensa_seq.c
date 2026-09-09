@@ -11,10 +11,7 @@
 ******************************************************************************/
 #include "./main.h"               /* common.h, bios2bswif.h(u8gBios2bswif*) */
 #include "../../src/apl/psimbrdgif.h" /* s8gPsimbrdgifGearpos, u16gPsimbrdgifVelspd, u16gPsimbrdgifRpmval */
-
-#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
-#include "../log/print_log.h"
-#endif
+#include "../log/print_log.h"     /* vdgLogArgPrint() - 常時呼ぶためPRINT_LOG_SETTING_CONFに関わらずinclude */
 
 #include "./kensa_seq.h"
 

@@ -1,668 +1,52 @@
-src/bsw/bcyclemng/bcyclemng.c: In function 'vdgBcyclemngifInit':
-src/bsw/bcyclemng/bcyclemng.c:68:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   68 |     vdgLogPrint( "---EXECUTE vdgBcyclemngifInit()---" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-In file included from src/bsw/bcyclemng/bcyclemng.c:38:
-src/bsw/bcyclemng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/bsw/bcyclemng/bcyclemng.c: In function 'vdgBcyclemngif4msin':
-src/bsw/bcyclemng/bcyclemng.c:90:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   90 |     vdgLogPrint( "---EXECUTE vdgBcyclemngif4msin()---" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/bsw/bcyclemng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/bsw/bcyclemng/bcyclemng.c: In function 'vdgBcyclemngif4msout':
-src/bsw/bcyclemng/bcyclemng.c:110:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  110 |     vdgLogPrint( "---execute vdgBcyclemngif4msout()---" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/bsw/bcyclemng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/bsw/bcyclemng/bcyclemng.c: In function 'vdgBcyclemngif16msin':
-src/bsw/bcyclemng/bcyclemng.c:128:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  128 |     vdgLogPrint( "---EXECUTE vdgBcyclemngif16msin()---" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/bsw/bcyclemng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/bsw/bcyclemng/bcyclemng.c: In function 'vdgBcyclemngif16msout':
-src/bsw/bcyclemng/bcyclemng.c:146:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  146 |     vdgLogPrint( "---EXECUTE vdgBcyclemngif16msout()---" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/bsw/bcyclemng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/bsw/bcyclemng/bcyclemng.c: In function 'vdgBcyclemngif64msin':
-src/bsw/bcyclemng/bcyclemng.c:164:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  164 |     vdgLogPrint( "---EXECUTE vdgBcyclemngif64msin()---" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/bsw/bcyclemng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/bsw/bcyclemng/bcyclemng.c: In function 'vdgBcyclemngif64msout':
-src/bsw/bcyclemng/bcyclemng.c:183:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  183 |     vdgLogPrint( "---EXECUTE vdgBcyclemngif64msout()---" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/bsw/bcyclemng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/bsw/bschedule/bschedule.c: In function 'vdgBscheduleifInitcall':
-src/bsw/bschedule/bschedule.c:55:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   55 |     vdgLogPrint( "execute vdgBscheduleifInitcall()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-In file included from src/bsw/bschedule/bschedule.c:22:
-src/bsw/bschedule/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/bsw/bschedule/bschedule.c: In function 'vdgBscheduleifIncall':
-src/bsw/bschedule/bschedule.c:76:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   76 |     vdgLogPrint( "execute vdgBscheduleifIncall()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/bsw/bschedule/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/bsw/bschedule/bschedule.c: In function 'vdgBscheduleifOutcall':
-src/bsw/bschedule/bschedule.c:119:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  119 |     vdgLogPrint( "execute vdgBscheduleifOutcall()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/bsw/bschedule/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacaramng/sacaramng.c: In function 'vdgSacaramngifInit':
-src/sac/sacaramng/sacaramng.c:64:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   64 |     vdgLogPrint( "start vdgSacaramngifInit() " );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-In file included from src/sac/sacaramng/sacaramng.c:36:
-src/sac/sacaramng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacaramng/sacaramng.c: In function 'vdgSacaramngif4msin':
-src/sac/sacaramng/sacaramng.c:84:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   84 |     vdgLogPrint( "start vdgSacaramngif4msin() " );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sacaramng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacaramng/sacaramng.c: In function 'vdgSacaramngif4msout':
-src/sac/sacaramng/sacaramng.c:101:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  101 |     vdgLogPrint( "start vdgSacaramngif4msout() " );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sacaramng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacaramng/sacaramng.c: In function 'vdgSacaramngif16msin':
-src/sac/sacaramng/sacaramng.c:116:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  116 |     vdgLogPrint( "start vdgSacaramngif16msin() " );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sacaramng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacaramng/sacaramng.c: In function 'vdgSacaramngif16msout':
-src/sac/sacaramng/sacaramng.c:132:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  132 |     vdgLogPrint( "start vdgSacaramngif16msout() " );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sacaramng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacaramng/sacaramng.c: In function 'vdgSacaramngif64msin':
-src/sac/sacaramng/sacaramng.c:148:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  148 |     vdgLogPrint( "start vdgSacaramngif64msin() " );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sacaramng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacaramng/sacaramng.c: In function 'vdgSacaramngif64msout':
-src/sac/sacaramng/sacaramng.c:165:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  165 |     vdgLogPrint( "start vdgSacaramngif64msout() " );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sacaramng/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacelcrt/sacelcrt.c: In function 'vdgSacelcrtifInit':
-src/sac/sacelcrt/sacelcrt.c:50:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   50 |     vdgLogPrint( "start vdgSacelcrtifInit()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-In file included from src/sac/sacelcrt/sacelcrt.c:16:
-src/sac/sacelcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacelcrt/sacelcrt.c:57:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   57 |     vdgLogArgPrint( "u8sSacelcrtThlpctO = %d", (uint32_t)u8sSacelcrtThlpctO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sacelcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacelcrt/sacelcrt.c:58:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   58 |     vdgLogArgPrint( "u8gSacelcrtifThlpct = %d", (uint32_t)u8gSacelcrtifThlpct );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sacelcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacelcrt/sacelcrt.c:59:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   59 |     vdgLogArgPrint( "u8gSacelcrtifCrtflg = %d", (uint32_t)u8gSacelcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sacelcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
 src/sac/sacelcrt/sacelcrt.c: In function 'vdgSacelcrtif4msin':
-src/sac/sacelcrt/sacelcrt.c:75:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   75 |     vdgLogPrint( "start vdgSacelcrtif4msin()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sacelcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacelcrt/sacelcrt.c:76:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   76 |     vdgLogArgPrint( "input : u8sSacelcrtThlpctO = %d", (uint32_t)u8sSacelcrtThlpctO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sacelcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacelcrt/sacelcrt.c:77:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   77 |     vdgLogArgPrint( "input : u8gSacelcrtifThlpct = %d", (uint32_t)u8gSacelcrtifThlpct );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sacelcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacelcrt/sacelcrt.c:78:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   78 |     vdgLogArgPrint( "input : u8gSacelcrtifCrtflg = %d", (uint32_t)u8gSacelcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sacelcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
 src/sac/sacelcrt/sacelcrt.c:89:21: warning: comparison is always false due to limited range of data type [-Wtype-limits]
    89 |     if ( u8tAcelpct > u8g_MAX )
       |                     ^
-src/sac/sacelcrt/sacelcrt.c:116:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  116 |     vdgLogArgPrint( "output : u8sSacelcrtThlpctO = %d", (uint32_t)u8sSacelcrtThlpctO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sacelcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacelcrt/sacelcrt.c:117:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  117 |     vdgLogArgPrint( "output : u8gSacelcrtifThlpct = %d", (uint32_t)u8gSacelcrtifThlpct );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sacelcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sacelcrt/sacelcrt.c:118:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  118 |     vdgLogArgPrint( "output : u8gSacelcrtifCrtflg = %d", (uint32_t)u8gSacelcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sacelcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sbrkcrt/sbrkcrt.c: In function 'vdgSbrkcrtifInit':
-src/sac/sbrkcrt/sbrkcrt.c:48:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   48 |     vdgLogPrint( "start vdgSbrkcrtifInit()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-In file included from src/sac/sbrkcrt/sbrkcrt.c:16:
-src/sac/sbrkcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sbrkcrt/sbrkcrt.c:56:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   56 |     vdgLogArgPrint( "u8sSbrkcrtPdlpctO = %d", (uint32_t)u8sSbrkcrtPdlpctO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sbrkcrt/sbrkcrt.c:57:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   57 |     vdgLogArgPrint( "u8gSbrkcrtifPdlpct = %d", (uint32_t)u8gSbrkcrtifPdlpct );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sbrkcrt/sbrkcrt.c:58:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   58 |     vdgLogArgPrint( "u8gSbrkcrtifCrtflg = %d", (uint32_t)u8gSbrkcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
 src/sac/sbrkcrt/sbrkcrt.c: In function 'vdgSbrkcrtif4msin':
-src/sac/sbrkcrt/sbrkcrt.c:73:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   73 |     vdgLogPrint( "start vdgSbrkcrtif4msin()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sbrkcrt/sbrkcrt.c:74:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   74 |     vdgLogArgPrint( "input : u8sSbrkcrtPdlpctO = %d", (uint32_t)u8sSbrkcrtPdlpctO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sbrkcrt/sbrkcrt.c:75:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   75 |     vdgLogArgPrint( "input : u8gSbrkcrtifPdlpct = %d", (uint32_t)u8gSbrkcrtifPdlpct );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sbrkcrt/sbrkcrt.c:76:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   76 |     vdgLogArgPrint( "input : u8gSbrkcrtifCrtflg = %d", (uint32_t)u8gSbrkcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
 src/sac/sbrkcrt/sbrkcrt.c:87:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
    87 |     if ( u8tBrkpct > u8g_MAX )
       |                    ^
-src/sac/sbrkcrt/sbrkcrt.c:114:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  114 |     vdgLogPrint( "DONE! vdgSbrkcrtif4msin()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sbrkcrt/sbrkcrt.c:115:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  115 |     vdgLogArgPrint( "output : u8sSbrkcrtPdlpctO = %d", (uint32_t)u8sSbrkcrtPdlpctO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sbrkcrt/sbrkcrt.c:116:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  116 |     vdgLogArgPrint( "output : u8gSbrkcrtifPdlpct = %d", (uint32_t)u8gSbrkcrtifPdlpct );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sbrkcrt/sbrkcrt.c:117:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  117 |     vdgLogArgPrint( "output : u8gSbrkcrtifCrtflg = %d", (uint32_t)u8gSbrkcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sbrkcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sclthcrt/sclthcrt.c: In function 'vdgSclthcrtifInit':
-src/sac/sclthcrt/sclthcrt.c:48:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   48 |     vdgLogPrint( "start vdgSclthcrtifPwon()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-In file included from src/sac/sclthcrt/sclthcrt.c:16:
-src/sac/sclthcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sclthcrt/sclthcrt.c:55:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   55 |     vdgLogArgPrint( "u8gSclthcrtifPdlpct = %d", (uint32_t)u8gSclthcrtifPdlpct );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sclthcrt/sclthcrt.c:56:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   56 |     vdgLogArgPrint( "u8gSclthcrtifCrtflg = %d", (uint32_t)u8gSclthcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sclthcrt/sclthcrt.c:57:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   57 |     vdgLogArgPrint( "u8sSclthcrtPdlpctO = %d", (uint32_t)u8sSclthcrtPdlpctO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
 src/sac/sclthcrt/sclthcrt.c: In function 'vdgSclthcrtif16msin':
-src/sac/sclthcrt/sclthcrt.c:72:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   72 |     vdgLogPrint( "start vdgSclthcrtif16msin()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sclthcrt/sclthcrt.c:73:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   73 |     vdgLogArgPrint( "input : u8gSclthcrtifPdlpct = %d", (uint8_t)u8gSclthcrtifPdlpct );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sclthcrt/sclthcrt.c:74:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   74 |     vdgLogArgPrint( "input : u8gSclthcrtifCrtflg = %d", (uint8_t)u8gSclthcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sclthcrt/sclthcrt.c:75:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   75 |     vdgLogArgPrint( "input : u8sSclthcrtPdlpctO = %d", (uint8_t)u8sSclthcrtPdlpctO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
 src/sac/sclthcrt/sclthcrt.c:86:21: warning: comparison is always false due to limited range of data type [-Wtype-limits]
    86 |     if ( u8tClthpct > u8g_MAX )
       |                     ^
-src/sac/sclthcrt/sclthcrt.c:113:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-  113 |     vdgLogPrint( "DONE! vdgSclthcrtif16msin()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sclthcrt/sclthcrt.c:114:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  114 |     vdgLogArgPrint( "output : u8gSclthcrtifPdlpct = %d", (uint32_t)u8gSclthcrtifPdlpct );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sclthcrt/sclthcrt.c:115:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  115 |     vdgLogArgPrint( "output : u8gSclthcrtifCrtflg = %d", (uint32_t)u8gSclthcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sclthcrt/sclthcrt.c:116:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  116 |     vdgLogArgPrint( "output : u8sSclthcrtPdlpctO = %d", (uint32_t)u8sSclthcrtPdlpctO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sclthcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c: In function 'vdgSgearcrtifInit':
-src/sac/sgearcrt/sgearcrt.c:49:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   49 |     vdgLogPrint( "start gSgearcrtifPwon()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-In file included from src/sac/sgearcrt/sgearcrt.c:17:
-src/sac/sgearcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c:57:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   57 |     vdgLogArgPrint( "s8gSgearcrtifPos = %d", (int32_t)s8gSgearcrtifPos );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c:58:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   58 |     vdgLogArgPrint( "u8gSgearcrtifCrtflg = %d", (int32_t)u8gSgearcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c:59:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   59 |     vdgLogArgPrint( "s8sSgearcrtPosO = %d", (int32_t)s8sSgearcrtPosO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c: In function 'vdgSgearcrtif64msin':
-src/sac/sgearcrt/sgearcrt.c:74:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   74 |     vdgLogPrint( "start vdgSgearcrtif64msin()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c:75:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   75 |     vdgLogArgPrint( "input : s8gSgearcrtifPos = %d", (int32_t)s8gSgearcrtifPos );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c:76:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   76 |     vdgLogArgPrint( "input : u8gSgearcrtifCrtflg = %d", (int32_t)u8gSgearcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c:77:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   77 |     vdgLogArgPrint( "input : s8sSgearcrtPosO = %d", (int32_t)s8sSgearcrtPosO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c:99:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   99 |     vdgLogPrint( "DONE! vdgSgearcrtif64msin()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c:100:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  100 |     vdgLogArgPrint( "output : s8gSgearcrtifPos = %d", (int32_t)s8gSgearcrtifPos );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c:101:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  101 |     vdgLogArgPrint( "output : u8gSgearcrtifCrtflg = %d", (int32_t)u8gSgearcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sgearcrt/sgearcrt.c:102:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  102 |     vdgLogArgPrint( "output : s8sSgearcrtPosO = %d", (int32_t)s8sSgearcrtPosO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sgearcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c: In function 'vdgSigswcrtifInit':
-src/sac/sigswcrt/sigswcrt.c:47:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   47 |     vdgLogPrint( "start vdgSigswcrtifInit()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-In file included from src/sac/sigswcrt/sigswcrt.c:16:
-src/sac/sigswcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c:55:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   55 |     vdgLogArgPrint( "u8gSigswcrtifSts = %d", (uint32_t)u8gSigswcrtifSts );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c:56:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   56 |     vdgLogArgPrint( "u8gSigswcrtifCrtflg = %d", (uint32_t)u8gSigswcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c:57:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   57 |     vdgLogArgPrint( "u8sSigswcrtStsO = %d", (uint32_t)u8sSigswcrtStsO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c: In function 'vdgSigswcrtif64msin':
-src/sac/sigswcrt/sigswcrt.c:72:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   72 |     vdgLogPrint( "start vdgSigswcrtif64msin()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c:73:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   73 |     vdgLogArgPrint( "input : u8gSigswcrtifSts = %d", (uint32_t)u8gSigswcrtifSts );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c:74:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   74 |     vdgLogArgPrint( "input : u8gSigswcrtifCrtflg = %d", (uint32_t)u8gSigswcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c:75:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   75 |     vdgLogArgPrint( "input : u8sSigswcrtStsO = %d", (uint32_t)u8sSigswcrtStsO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c:98:18: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   98 |     vdgLogPrint( "DONE! vdgSigswcrtif64msin()" );
-      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                  |
-      |                  char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c:99:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   99 |     vdgLogArgPrint( "output : u8gSigswcrtifSts = %d", (uint32_t)u8gSigswcrtifSts );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c:100:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  100 |     vdgLogArgPrint( "output : u8gSigswcrtifCrtflg = %d", (uint32_t)u8gSigswcrtifCrtflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-src/sac/sigswcrt/sigswcrt.c:101:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  101 |     vdgLogArgPrint( "output : u8sSigswcrtStsO = %d", (uint32_t)u8sSigswcrtStsO );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-src/sac/sigswcrt/../../../debug/log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
 debug/kensa_1/kensa_seq.c: In function 'vdgKensaSeq64msin':
-debug/kensa_1/kensa_seq.c:93:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   93 |     vdgLogArgPrint( "KENSA frame = %d",       (int32_t)u16tFrame );
+debug/kensa_1/kensa_seq.c:90:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   90 |     vdgLogArgPrint( "KENSA frame = %d",       (int32_t)u16tFrame );
       |                     ^~~~~~~~~~~~~~~~~~
       |                     |
       |                     char *
-In file included from debug/kensa_1/./main.h:19,
+In file included from debug/kensa_1/./main.h:22,
                  from debug/kensa_1/kensa_seq.c:12:
 debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
    24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
       |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_seq.c:91:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   91 |     vdgLogArgPrint( "  cmd gear   = %d",      (int32_t)s8gBios2bswifGear );
+      |                     ^~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_seq.c:92:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   92 |     vdgLogArgPrint( "  cmd accel  = %d",      (int32_t)u8gBios2bswifAcelthl );
+      |                     ^~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_seq.c:93:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   93 |     vdgLogArgPrint( "  cmd brake  = %d",      (int32_t)u8gBios2bswifBrkpdl );
+      |                     ^~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
 debug/kensa_1/kensa_seq.c:94:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   94 |     vdgLogArgPrint( "  cmd gear   = %d",      (int32_t)s8gBios2bswifGear );
+   94 |     vdgLogArgPrint( "  cmd clutch = %d",      (int32_t)u8gBios2bswifClthpdl );
       |                     ^~~~~~~~~~~~~~~~~~~
       |                     |
       |                     char *
@@ -670,72 +54,96 @@ debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 
    24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
       |                      ~~~~~~~~~~~~~~~^~~~~~
 debug/kensa_1/kensa_seq.c:95:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   95 |     vdgLogArgPrint( "  cmd accel  = %d",      (int32_t)u8gBios2bswifAcelthl );
-      |                     ^~~~~~~~~~~~~~~~~~~
+   95 |     vdgLogArgPrint( "  -> sim gear      = %d", (int32_t)s8gPsimbrdgifGearpos );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
       |                     |
       |                     char *
 debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
    24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
       |                      ~~~~~~~~~~~~~~~^~~~~~
 debug/kensa_1/kensa_seq.c:96:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   96 |     vdgLogArgPrint( "  cmd brake  = %d",      (int32_t)u8gBios2bswifBrkpdl );
-      |                     ^~~~~~~~~~~~~~~~~~~
+   96 |     vdgLogArgPrint( "  -> sim speed[kmh]= %d", (int32_t)u16gPsimbrdgifVelspd );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
       |                     |
       |                     char *
 debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
    24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
       |                      ~~~~~~~~~~~~~~~^~~~~~
 debug/kensa_1/kensa_seq.c:97:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   97 |     vdgLogArgPrint( "  cmd clutch = %d",      (int32_t)u8gBios2bswifClthpdl );
-      |                     ^~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~
-debug/kensa_1/kensa_seq.c:98:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   98 |     vdgLogArgPrint( "  -> sim gear      = %d", (int32_t)s8gPsimbrdgifGearpos );
+   97 |     vdgLogArgPrint( "  -> sim rpm       = %d", (int32_t)u16gPsimbrdgifRpmval );
       |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
       |                     |
       |                     char *
 debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
    24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
       |                      ~~~~~~~~~~~~~~~^~~~~~
-debug/kensa_1/kensa_seq.c:99:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   99 |     vdgLogArgPrint( "  -> sim speed[kmh]= %d", (int32_t)u16gPsimbrdgifVelspd );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
+debug/kensa_1/kensa_manual.c: In function 'vdgKensaManual4msin':
+debug/kensa_1/kensa_manual.c:165:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  165 |         vdgLogArgPrint( "IG=%d",           (int32_t)u8gBios2bswifIgsw );
+      |                         ^~~~~~~
+      |                         |
+      |                         char *
+In file included from debug/kensa_1/./main.h:22,
+                 from debug/kensa_1/kensa_manual.c:24:
 debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
    24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
       |                      ~~~~~~~~~~~~~~~^~~~~~
-debug/kensa_1/kensa_seq.c:100:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-  100 |     vdgLogArgPrint( "  -> sim rpm       = %d", (int32_t)u16gPsimbrdgifRpmval );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
+debug/kensa_1/kensa_manual.c:166:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  166 |         vdgLogArgPrint( "  cmd gear   = %d", (int32_t)s8gBios2bswifGear );
+      |                         ^~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
 debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
    24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
       |                      ~~~~~~~~~~~~~~~^~~~~~
-debug/kensa_1/main.c:36:1: warning: return type of 'main' is not 'int' [-Wmain]
-   36 | main( void )
+debug/kensa_1/kensa_manual.c:167:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  167 |         vdgLogArgPrint( "  cmd accel  = %d", (int32_t)u8gBios2bswifAcelthl );
+      |                         ^~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:168:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  168 |         vdgLogArgPrint( "  cmd brake  = %d", (int32_t)u8gBios2bswifBrkpdl );
+      |                         ^~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:169:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  169 |         vdgLogArgPrint( "  cmd clutch = %d", (int32_t)u8gBios2bswifClthpdl );
+      |                         ^~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:170:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  170 |         vdgLogArgPrint( "  -> sim gear      = %d", (int32_t)s8gPsimbrdgifGearpos );
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:171:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  171 |         vdgLogArgPrint( "  -> sim speed[kmh]= %d", (int32_t)u16gPsimbrdgifVelspd );
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:172:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  172 |         vdgLogArgPrint( "  -> sim rpm       = %d", (int32_t)u16gPsimbrdgifRpmval );
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/main.c:37:1: warning: return type of 'main' is not 'int' [-Wmain]
+   37 | main( void )
       | ^~~~
-debug/kensa_1/main.c: In function 'main':
-debug/kensa_1/main.c:40:17: warning: pointer targets in passing argument 1 of 'vdgLogPrint' differ in signedness [-Wpointer-sign]
-   40 |     vdgLogPrint("E X E C U T E  S I M U L A T O R");
-      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                 |
-      |                 char *
-In file included from debug/kensa_1/./main.h:19,
-                 from debug/kensa_1/main.c:12:
-debug/kensa_1/./../log/print_log.h:23:34: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   23 | void vdgLogPrint( const uint8_t *ptrStr );
-      |                   ~~~~~~~~~~~~~~~^~~~~~
-debug/kensa_1/main.c:43:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
-   43 |     vdgLogArgPrint( "u8gBscheduleifRstflg = %d", (uint32_t)u8gBscheduleifRstflg );
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                     |
-      |                     char *
-debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
-   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
-      |                      ~~~~~~~~~~~~~~~^~~~~~

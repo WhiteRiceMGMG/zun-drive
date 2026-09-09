@@ -44,6 +44,7 @@ SRCS = \
     env/swift_env/swift_env.c \
     debug/kensa_1/dmy_def.c \
     debug/kensa_1/kensa_seq.c \
+    debug/kensa_1/kensa_manual.c \
     debug/kensa_1/main.c \
     debug/log/print_log/print_log.c
 
@@ -78,6 +79,7 @@ OBJS = \
     build/swift_env.o \
     build/dmy_def.o \
     build/kensa_seq.o \
+    build/kensa_manual.o \
     build/main.o \
     build/print_log.o
 
@@ -98,7 +100,7 @@ build:
 # Link                                               #
 ######################################################
 $(TARGET): $(OBJS)
-	$(CC) $(OBJS) -o $(TARGET) 2>> build/error.log
+	$(CC) $(OBJS) -o $(TARGET) -luser32 2>> build/error.log
 
 ######################################################
 # Compile                                            #
@@ -182,6 +184,9 @@ build/dmy_def.o: debug/kensa_1/dmy_def.c
 	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
 
 build/kensa_seq.o: debug/kensa_1/kensa_seq.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
+build/kensa_manual.o: debug/kensa_1/kensa_manual.c
 	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
 
 build/main.o: debug/kensa_1/main.c
