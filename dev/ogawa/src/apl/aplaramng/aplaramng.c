@@ -10,11 +10,13 @@
 /****************************************************************/
 /*  * include                                                   */
 /****************************************************************/
+#include "../../inc/common.h"
 #include "../ppermif.h"
 #include "../pprtctif.h"
-#include "../psimbrdig.h"
+#include "../psimbrdgif.h"
 #include "../pvehstsjdgif.h"
 #include "../pwarnif.h"
+#include "../psysctlif.h"
 
 #if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
 #include "../../../debug/log/print_log.h"
@@ -43,7 +45,12 @@
 void
 vdgAplaramngifInit( void )
 {
-
+    vdgPprtctifInit();
+    vdgPwarnifInit();
+    vdgPpermifInit();
+    vdgPsysctlInit();
+    vdgPsimbrdgifInit();
+    vdgPvehstsjdgifInit();
 }
 
 /****************************************************************/
@@ -56,7 +63,7 @@ vdgAplaramngifInit( void )
 void
 vdgAplaramngif4msin( void )
 {
-
+    vdgPsimbrdgif4msin();
 }
 
 /****************************************************************/
@@ -69,7 +76,7 @@ vdgAplaramngif4msin( void )
 void
 vdgAplaramngif4msout( void )
 {
-
+    vdgPsimbrdgif4msout();
 }
 
 
@@ -83,7 +90,9 @@ vdgAplaramngif4msout( void )
 void
 vdgAplaramngif16msin( void )
 {
-
+    vdgPprtctif16msin();
+    vdgPpermif16msin();
+    vdgPsysctl16msin();
 }
 
 
@@ -110,7 +119,8 @@ vdgAplaramngif16msout( void )
 void
 vdgAplaramngif64msin( void )
 {
-
+    vdgPwarnif64msin();
+    vdgPvehstsjdgif64msin();
 }
 
 /****************************************************************/

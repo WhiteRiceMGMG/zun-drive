@@ -7,11 +7,14 @@
 ******************************************************************************/
 
 /******************************************************************************
-  * include                                                                    
+  * include
 ******************************************************************************/
-#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
+/* 2026-09-10: このOSタイマー(GetTickCount)は詳細トレースログの有無に関わらず */
+/* 常に必要(唯一の実装であり、仮想時間計測そのものがこれに依存しているため)。 */
+/* 元々はPRINT_LOG_SETTING_CONF(詳細トレースON/OFF)と結合されており、       */
+/* OFFにすると仮想時間が一切進まなくなる上、下にあった代替実装は構文エラー   */
+/* すら含む未着手のT.B.Dスタブだった。結合を解消し常時有効化した。          */
 #include <windows.h>
-#endif
 
 #ifdef TRUE
 #undef TRUE
@@ -41,11 +44,7 @@ uint16_t u16gVirtualenvCm64;
 /******************************************************************************
   * internal public variables contains macros                                  
 ******************************************************************************/
-#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
 void vdsVirtualtimeUpdate( void );
-#else
-void vdsVirtualtimeUpdateDm( void );
-#endif
 
 static DWORD DWsPrevTick;
 
@@ -67,11 +66,7 @@ static DWORD DWsPrevTick;
 void
 vdgVirtualenvInit( void )
 {
-#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
     DWsPrevTick = GetTickCount();
-#else
-    DWsPrevTick = (u1)0;
-#endif
 
     u32gVirtualenvRealtime    = (uint32_t)0U;
     u16gVirtualenvVirtualtime = (uint32_t)0U;
@@ -97,11 +92,7 @@ vdgVirtualenvExecute( void )
 
     while(1)
     {
-#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
         vdsVirtualtimeUpdate();
-#else
-        vdsVirtualtimeUpdateDm();
-#endif
         u16tDeltaTime = (uint16_t)(u16gVirtualenvVirtualtime - u16tPrevVirtualtime);
         u16tPrevVirtualtime = u16gVirtualenvVirtualtime;
 
@@ -135,15 +126,14 @@ vdgVirtualenvExecute( void )
 }
 
 /******************************************************************************
-  * internal function                                                          
+  * internal function
 ******************************************************************************/
-#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
 /******************************************************************************
-  * @func     vdsDdummyFunc( void )                                            
-  * @scope    internal                                                         
-  * @brief    sample function                                                  
-  * @param    -                                                                
-  * @return   -                                                                
+  * @func     vdsVirtualtimeUpdate( void )
+  * @scope    internal
+  * @brief    OS実時間の経過分を仮想時間に加算する
+  * @param    -
+  * @return   -
 ******************************************************************************/
 void
 vdsVirtualtimeUpdate( void )
@@ -161,36 +151,6 @@ vdsVirtualtimeUpdate( void )
 
     u16gVirtualenvVirtualtime = (uint16_t)( (uint16_t)u32gVirtualenvRealtime / (uint16_t)u16g_VIRTUAL_REAL_TIME_SCALE );
 }
-#else
 /******************************************************************************
-  * @func     vdsVirtualtimeUpdateDm( void )                                   
-  * @scope    internal                                                         
-  * @brief    sample function                                                  
-  * @param    -                                                                
-  * @return   -                                                                
-******************************************************************************/
-void
-vdsVirtualtimeUpdateDm( void )
-{
-    /* T.B.D */
-    ;
-}
-
-/******************************************************************************
-  * @func     vdsVirtualtimeDmCounter( void )                                  
-  * @scope    internal                                                         
-  * @brief    sample function                                                  
-  * @param    -                                                                
-  * @return   -                                                                
-******************************************************************************/
-void
-vdsVirtualtimeDmCounter( void 9
-{
-    /* T.B.D */
-    ;
-}
-
-#endif
-/******************************************************************************
-  * end of file                                                                
+  * end of file
 ******************************************************************************/

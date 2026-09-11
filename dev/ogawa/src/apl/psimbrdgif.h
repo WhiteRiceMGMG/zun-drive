@@ -9,11 +9,12 @@
 #define PSIMBRDGIF_H
 
 /******************************************************************************
-  * include                                                                    
+  * include
 ******************************************************************************/
+#include "../inc/common.h" /* uint8_t等の型定義。他ファイルからのinclude順序に依存しないための自己完結化 */
 
 /******************************************************************************
-  * external public variables contains macros                                  
+  * external public variables contains macros
 ******************************************************************************/
 extern uint8_t  u8gPsimbrdgifAclthlpc;
 extern uint8_t  u8gPsimbrdgifBrkpdlpct;
@@ -24,8 +25,11 @@ extern uint16_t u16gPsimbrdgifRpmval;
 extern uint8_t  u8gPsimbrdigIgswsts;
 
 /******************************************************************************
-  * external function prototype                                                
+  * external function prototype
 ******************************************************************************/
+void vdgPsimbrdgifInit( void );
+void vdgPsimbrdgif4msin( void );
+void vdgPsimbrdgif4msout( void );
 
 #endif
 /******************************************************************************

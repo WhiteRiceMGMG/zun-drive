@@ -1,0 +1,149 @@
+src/sac/sacelcrt/sacelcrt.c: In function 'vdgSacelcrtif4msin':
+src/sac/sacelcrt/sacelcrt.c:89:21: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   89 |     if ( u8tAcelpct > u8g_MAX )
+      |                     ^
+src/sac/sbrkcrt/sbrkcrt.c: In function 'vdgSbrkcrtif4msin':
+src/sac/sbrkcrt/sbrkcrt.c:87:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   87 |     if ( u8tBrkpct > u8g_MAX )
+      |                    ^
+src/sac/sclthcrt/sclthcrt.c: In function 'vdgSclthcrtif16msin':
+src/sac/sclthcrt/sclthcrt.c:86:21: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   86 |     if ( u8tClthpct > u8g_MAX )
+      |                     ^
+debug/kensa_1/kensa_seq.c: In function 'vdgKensaSeq64msin':
+debug/kensa_1/kensa_seq.c:90:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   90 |     vdgLogArgPrint( "KENSA frame = %d",       (int32_t)u16tFrame );
+      |                     ^~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+In file included from debug/kensa_1/./main.h:22,
+                 from debug/kensa_1/kensa_seq.c:12:
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_seq.c:91:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   91 |     vdgLogArgPrint( "  cmd gear   = %d",      (int32_t)s8gBios2bswifGear );
+      |                     ^~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_seq.c:92:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   92 |     vdgLogArgPrint( "  cmd accel  = %d",      (int32_t)u8gBios2bswifAcelthl );
+      |                     ^~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_seq.c:93:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   93 |     vdgLogArgPrint( "  cmd brake  = %d",      (int32_t)u8gBios2bswifBrkpdl );
+      |                     ^~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_seq.c:94:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   94 |     vdgLogArgPrint( "  cmd clutch = %d",      (int32_t)u8gBios2bswifClthpdl );
+      |                     ^~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_seq.c:95:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   95 |     vdgLogArgPrint( "  -> sim gear      = %d", (int32_t)s8gPsimbrdgifGearpos );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_seq.c:96:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   96 |     vdgLogArgPrint( "  -> sim speed[kmh]= %d", (int32_t)u16gPsimbrdgifVelspd );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_seq.c:97:21: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+   97 |     vdgLogArgPrint( "  -> sim rpm       = %d", (int32_t)u16gPsimbrdgifRpmval );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c: In function 'vdgKensaManual4msin':
+debug/kensa_1/kensa_manual.c:165:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  165 |         vdgLogArgPrint( "IG=%d",           (int32_t)u8gBios2bswifIgsw );
+      |                         ^~~~~~~
+      |                         |
+      |                         char *
+In file included from debug/kensa_1/./main.h:22,
+                 from debug/kensa_1/kensa_manual.c:24:
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:166:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  166 |         vdgLogArgPrint( "  cmd gear   = %d", (int32_t)s8gBios2bswifGear );
+      |                         ^~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:167:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  167 |         vdgLogArgPrint( "  cmd accel  = %d", (int32_t)u8gBios2bswifAcelthl );
+      |                         ^~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:168:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  168 |         vdgLogArgPrint( "  cmd brake  = %d", (int32_t)u8gBios2bswifBrkpdl );
+      |                         ^~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:169:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  169 |         vdgLogArgPrint( "  cmd clutch = %d", (int32_t)u8gBios2bswifClthpdl );
+      |                         ^~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:170:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  170 |         vdgLogArgPrint( "  -> sim gear      = %d", (int32_t)s8gPsimbrdgifGearpos );
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:171:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  171 |         vdgLogArgPrint( "  -> sim speed[kmh]= %d", (int32_t)u16gPsimbrdgifVelspd );
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/kensa_manual.c:172:25: warning: pointer targets in passing argument 1 of 'vdgLogArgPrint' differ in signedness [-Wpointer-sign]
+  172 |         vdgLogArgPrint( "  -> sim rpm       = %d", (int32_t)u16gPsimbrdgifRpmval );
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         char *
+debug/kensa_1/./../log/print_log.h:24:37: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+   24 | void vdgLogArgPrint( const uint8_t *ptrStr, uint32_t u32Arg );
+      |                      ~~~~~~~~~~~~~~~^~~~~~
+debug/kensa_1/main.c:37:1: warning: return type of 'main' is not 'int' [-Wmain]
+   37 | main( void )
+      | ^~~~

@@ -34,9 +34,11 @@
                                     /* vdgSimaramngif64msin()  */
                                     /* vdgSimaramngif64msout() */
 
-#if ( PRINT_LOGSETTING_CONF == PRINT_LOGSETTING_VALID )
+#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
 #include "../../../debug/log/print_log.h"
 #endif
+
+#include "../../../debug/kensa_1/kensa_manual.h" /* vdgKensaManual4msin() - 実キーボード入力によるマニュアル操作 */
 
 #include "../bcyclemngif.h"         /* self header */
 
@@ -62,7 +64,7 @@
 void
 vdgBcyclemngifInit( void )
 {
-#if ( PRINT_LOGSETTING_CONF == PRINT_LOGSETTING_VALID )
+#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
     vdgLogPrint( "---EXECUTE vdgBcyclemngifInit()---" );
 #endif
     /* ▼▼▼ INSERT BSW PWON FUNCTION ▼▼▼ */
@@ -84,11 +86,12 @@ vdgBcyclemngifInit( void )
 void
 vdgBcyclemngif4msin( void )
 {
-#if ( PRINT_LOGSETTING_CONF == PRINT_LOGSETTING_VALID )
+#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
     vdgLogPrint( "---EXECUTE vdgBcyclemngif4msin()---" );
 #endif
 
 
+    vdgKensaManual4msin(); /* キーボード入力の読み取り・ペダル反映(実入力デバイス代替) */
     vdgSacaramngif4msin(); /* sac layer manager 4msin function */
     vdgAplaramngif4msin(); /* apl layer manager 4msin function */
     vdgSimaramngif4msin(); /* sim layer manager 4msin function */
@@ -104,7 +107,7 @@ vdgBcyclemngif4msin( void )
 void
 vdgBcyclemngif4msout( void )
 {
-#if ( PRINT_LOGSETTING_CONF == PRINT_LOGSETTING_VALID )
+#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
     vdgLogPrint( "---execute vdgBcyclemngif4msout()---" );
 #endif
     vdgSacaramngif4msout(); /* sac layer manager 4msout function */
@@ -122,7 +125,7 @@ vdgBcyclemngif4msout( void )
 void
 vdgBcyclemngif16msin( void )
 {
-#if ( PRINT_LOGSETTING_CONF == PRINT_LOGSETTING_VALID )
+#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
     vdgLogPrint( "---EXECUTE vdgBcyclemngif16msin()---" );
 #endif
     vdgSacaramngif16msin(); /* sac layer manager 16msin function */
@@ -140,7 +143,7 @@ vdgBcyclemngif16msin( void )
 void
 vdgBcyclemngif16msout( void )
 {
-#if ( PRINT_LOGSETTING_CONF == PRINT_LOGSETTING_VALID )
+#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
     vdgLogPrint( "---EXECUTE vdgBcyclemngif16msout()---" );
 #endif
     vdgSacaramngif16msout(); /* sac layer manager 16msout function */
@@ -158,7 +161,7 @@ vdgBcyclemngif16msout( void )
 void
 vdgBcyclemngif64msin( void )
 {
-#if ( PRINT_LOGSETTING_CONF == PRINT_LOGSETTING_VALID )
+#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
     vdgLogPrint( "---EXECUTE vdgBcyclemngif64msin()---" );
 #endif
     vdgSacaramngif64msin(); /* sac layer manager 64msin function */
@@ -176,7 +179,7 @@ vdgBcyclemngif64msin( void )
 void
 vdgBcyclemngif64msout( void )
 {
-#if ( PRINT_LOGSETTING_CONF == PRINT_LOGSETTING_VALID )
+#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
     vdgLogPrint( "---EXECUTE vdgBcyclemngif64msout()---" );
 #endif
     vdgSacaramngif64msout(); /* sac layer manager 64msout function */

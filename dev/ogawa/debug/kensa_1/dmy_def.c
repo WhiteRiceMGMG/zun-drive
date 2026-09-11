@@ -62,6 +62,7 @@ void vdgSacaramngif64msout( void )
 }
 */
 
+/*
 void vdgAplaramngifInit( void )
 {
     ;
@@ -90,7 +91,9 @@ void vdgAplaramngif64msout( void )
 {
     ;
 }
+*/
 
+/*
 void vdgSimaramngifInit( void )
 {
     ;
@@ -119,6 +122,7 @@ void vdgSimaramngif64msout( void )
 {
     ;
 }
+*/
 /******************************************************************************
   * internal function                                                          
 ******************************************************************************/

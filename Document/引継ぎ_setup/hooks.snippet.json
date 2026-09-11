@@ -1,0 +1,32 @@
+{
+  "_comment": "この hooks オブジェクトの中身だけを、新しいPCの %USERPROFILE%\\.claude\\settings.json にマージしてください(このファイル自体を上書き保存しないこと)。パスは $USERPROFILE(Git Bash経由でのフック実行を想定)を使っているため、通常は編集不要です。Git Bashが無い環境では $USERPROFILE の部分を実際の絶対パス、または %USERPROFILE% に置き換えてください。",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/hooks/claude-notify.ps1\" -Event Stop",
+            "timeout": 15,
+            "async": true,
+            "statusMessage": "完了通知を再生中..."
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "auto",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/hooks/claude-notify.ps1\" -Event PreCompact",
+            "timeout": 15,
+            "async": true,
+            "statusMessage": "コンテキスト警告を再生中..."
+          }
+        ]
+      }
+    ]
+  }
+}

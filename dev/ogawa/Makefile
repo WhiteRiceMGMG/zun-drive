@@ -33,8 +33,18 @@ SRCS = \
     src/apl/psimbrdg/psimbrdg.c \
     src/apl/pvehstsjdg/pvehstsjdg.c \
     src/apl/pwarn/pwarn.c \
+    src/apl/psysctl/psysctl.c \
+    src/apl/aplaramng/aplaramng.c \
+    src/sim/mvirtmach/mvirtmach.c \
+    src/sim/meng/meng.c \
+    src/sim/mgearbox/mgearbox.c \
+    src/sim/mclth/mclth.c \
+    src/sim/mbrake/mbrake.c \
+    src/sim/simaramng/simaramng.c \
     env/swift_env/swift_env.c \
     debug/kensa_1/dmy_def.c \
+    debug/kensa_1/kensa_seq.c \
+    debug/kensa_1/kensa_manual.c \
     debug/kensa_1/main.c \
     debug/log/print_log/print_log.c
 
@@ -58,8 +68,18 @@ OBJS = \
     build/psimbrdg.o \
     build/pvehstsjdg.o \
     build/pwarn.o \
+    build/psysctl.o \
+    build/aplaramng.o \
+    build/mvirtmach.o \
+    build/meng.o \
+    build/mgearbox.o \
+    build/mclth.o \
+    build/mbrake.o \
+    build/simaramng.o \
     build/swift_env.o \
     build/dmy_def.o \
+    build/kensa_seq.o \
+    build/kensa_manual.o \
     build/main.o \
     build/print_log.o
 
@@ -80,7 +100,7 @@ build:
 # Link                                               #
 ######################################################
 $(TARGET): $(OBJS)
-	$(CC) $(OBJS) -o $(TARGET) 2>> build/error.log
+	$(CC) $(OBJS) -o $(TARGET) -luser32 2>> build/error.log
 
 ######################################################
 # Compile                                            #
@@ -133,10 +153,40 @@ build/pvehstsjdg.o: src/apl/pvehstsjdg/pvehstsjdg.c
 build/pwarn.o: src/apl/pwarn/pwarn.c
 	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
 
+build/psysctl.o: src/apl/psysctl/psysctl.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
+build/aplaramng.o: src/apl/aplaramng/aplaramng.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
+build/mvirtmach.o: src/sim/mvirtmach/mvirtmach.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
+build/meng.o: src/sim/meng/meng.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
+build/mgearbox.o: src/sim/mgearbox/mgearbox.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
+build/mclth.o: src/sim/mclth/mclth.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
+build/mbrake.o: src/sim/mbrake/mbrake.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
+build/simaramng.o: src/sim/simaramng/simaramng.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
 build/swift_env.o: env/swift_env/swift_env.c
 	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
 
 build/dmy_def.o: debug/kensa_1/dmy_def.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
+build/kensa_seq.o: debug/kensa_1/kensa_seq.c
+	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
+
+build/kensa_manual.o: debug/kensa_1/kensa_manual.c
 	$(CC) $(CFLAGS) -c $< -o $@ 2>> build/error.log
 
 build/main.o: debug/kensa_1/main.c

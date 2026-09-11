@@ -13,12 +13,13 @@
 ******************************************************************************/
 #include "../../src/inc/common.h"
 
-#if ( PRINT_LOG_SETTING_CONF == PRINT_LOG_SETTING_VALID )
+/* 2026-09-10: stdio.h/swift_envif.h/print_log.hはPRINT_LOG_SETTING_CONF   */
+/* (詳細トレースのON/OFF)に関わらず必須(printf自体・メインループ関数・    */
+/* 常時出力になったkensa_manual/kensa_seqのステータス表示が使うため)。      */
+/* 元はこの設定と結合されており、OFFにするとビルドが通らなかった。         */
 #include <stdio.h>
 #include "../../env/swift_envif.h"
 #include "../log/print_log.h"
-#endif
-
 
 #include "../../src/bsw/bbsw2iosif.h"
 #include "../../src/bsw/bcyclemngif.h"
