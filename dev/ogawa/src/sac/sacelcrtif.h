@@ -15,7 +15,7 @@
 /******************************************************************************
   * external public variables contains macros                                  
 ******************************************************************************/
-extern uint8_t u8gSacelcrtifThlpct;
+extern uint8_t u8gSacelcrtifThlpct; /* 100/256 */
 extern uint8_t u8gSacelcrtifCrtflg;
 
 /******************************************************************************
