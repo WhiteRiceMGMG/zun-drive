@@ -15,8 +15,8 @@
 /******************************************************************************
   * external function prototype                                                
 ******************************************************************************/
-extern uint8_t u8gSclthcrtifPdlpct;/* SAC�N���b�`�J�x�␳�l     */  /* 100/256 */
-extern uint8_t u8gSclthcrtifCrtflg;/* SAC�N���b�`�␳�t���O */
+extern uint8_t u8gSclthcrtifPdlpct;/* SACクラッチ開度補正値     */  /* 100/256 */
+extern uint8_t u8gSclthcrtifCrtflg;/* SACクラッチ補正フラグ */
 
 /******************************************************************************
   * external public variables contains macros                                  

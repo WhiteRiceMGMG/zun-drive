@@ -15,8 +15,8 @@
 /******************************************************************************
   * external public variables contains macros                                  
 ******************************************************************************/
-extern uint8_t u8gSacelcrtifThlpct;  /* SACアクセル開度数補正値   */  /* 100/256 */
-extern uint8_t u8gSacelcrtifCrtflg;  /* SACアクセル補正フラグ */
+extern uint8_t u8gSacelcrtifThlpct;  /* SAC繧｢繧ｯ繧ｻ繝ｫ髢句ｺｦ謨ｰ陬懈ｭ｣蛟､   */  /* 100/256 */
+extern uint8_t u8gSacelcrtifCrtflg;  /* SAC繧｢繧ｯ繧ｻ繝ｫ陬懈ｭ｣繝輔Λ繧ｰ */
 
 /******************************************************************************
   * external function prototype                                                
