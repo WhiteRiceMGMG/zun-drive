@@ -1,28 +1,28 @@
 /******************************************************************************
-  * @file     sclthcrt.h                                                       
-  * @brief    clth correction                                                  
+  * @file     sgearcrt.c                                                       
+  * @brief    gear correction                                                  
   * @domain   sensor-actuator                                                  
   * @date     2026/07/20                                                       
   * @(c)      2026 ocml                                                        
 ******************************************************************************/
-#ifndef SCLTHCRTIF_H
-#define SCLTHCRTIF_H
+#ifndef SACELCRTIF_H
+#define SACELCRTIF_H
 
 /******************************************************************************
   * include                                                                    
 ******************************************************************************/
+#include "../inc/common.h"
+/******************************************************************************
+  * external public variables contains macros                                  
+******************************************************************************/
+extern uint8_t u8gSacelcrtifThlpct; /* 100/256 */
+extern uint8_t u8gSacelcrtifCrtflg;
 
 /******************************************************************************
   * external function prototype                                                
 ******************************************************************************/
-extern uint8_t u8gSclthcrtifPdlpct;/* SACクラッチ開度補正値     */  /* 100/256 */
-extern uint8_t u8gSclthcrtifCrtflg;/* SACクラッチ補正フラグ */
-
-/******************************************************************************
-  * external public variables contains macros                                  
-******************************************************************************/
-void vdgSclthcrtifInit( void );
-void vdgSclthcrtif16msin( void );
+void vdgSacelcrtifInit( void );
+void vdgSacelcrtif4msin( void );
 
 #endif
 /******************************************************************************

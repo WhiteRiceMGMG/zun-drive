@@ -109,6 +109,14 @@ typedef struct
 #define s16g_MIN ((int16_t)0x8000)
 #define s32g_MIN ((int32_t)0x80000000)
 
+#define s8g_ZUNDRIVEIF_GEAR_R ((sint8)-1)
+#define s8g_ZUNDRIVEIF_GEAR_N ((sint8)0)
+#define s8g_ZUNDRIVEIF_GEAR_1 ((sint8)1)
+#define s8g_ZUNDRIVEIF_GEAR_2 ((sint8)2)
+#define s8g_ZUNDRIVEIF_GEAR_3 ((sint8)3)
+#define s8g_ZUNDRIVEIF_GEAR_4 ((sint8)4)
+#define s8g_ZUNDRIVEIF_GEAR_5 ((sint8)5)
+
 #endif
 /*----------------------------------------------------------------------------*/
 /* EOF                                                                        */
